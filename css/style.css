@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #2c2c2c;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    margin: 0; /* REMOVE essa margem absurda */
+}
+
+.logo h2 {
+    color: #F5E6C8;
+    font-size: 20px;
+    margin: 0; /* garante que não tem espaçamento estranho */
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #F5E6C8;
+    font-size: 12px;
+    padding: 5px 2px;
+}
+nav ul li a:hover{
+    color: #fff;
+    border-bottom: 3px solid #882929;
+}
+.linhaconteudo{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.colunaesq, .dircoluna{
+    flex-basis: 50%;
+}
+.colunaesq{
+    padding: 50px 0;
+}
+    .fa-search{
+        color: #F5E6C8;
+    }
+.pesquisa{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border: 2px solid #8C1C13;
+    border-radius: 20px;
+}
+.pesuisa .fa-search{
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.pesquisa input{
+    width: 100%;
+    outline: none;
+    border: 0;
+    color: #999;
+    background: transparent;
+    font-size: 14px;
+}
+hr{
+    width: 160px;
+    height: 4px;
+    background: #8C1C13;
+    margin: 30px 0;
+    border: none;
+}
+h1{
+    font-size: 40px;
+    color: #F5E6C8;
+    letter-spacing: 2px;
+}
+p{
+    color: #F5E6C8;
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+.indicador{
+    display: flex;
+}
+span{
+    width: 7px;
+    height: 7px;
+    border: 1px solid #8C1C13;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.ativo{
+    background: #8C1C13;
+}
+.dircoluna{
+    width: 100%;
+}
+.links{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.links a {
+    text-decoration: none; /* tira o sublinhado roxo */
+    background: none;      /* garante que não tem fundo */
+}
+.links .fa-facebook-f,
+.links .fa-twitter,
+.links .fa-instagram {
+    color: #8C1C13;
+    width: 15px; 
+    display: block; 
+    margin: 30px 0;
+}
